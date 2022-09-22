@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --mainBkgrnd: hsl(217, 54%, 11%);
+    --cardBkgrnd: hsl(216, 50%, 16%);
+    --lineClr: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainBkgrnd);
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: var(--cardBkgrnd);
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+#equilibrium {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+article h1 {
+    display: inline-block;
+    color: var(--white);
+    margin-top: 1rem;
+    font-weight: 600;
+    transition: all 350ms;
+    cursor: pointer;
+}
+
+.gray {
+    color: var(--softBlue);
+}
+
+.text {
+    padding: 1rem 0;
+    line-height: 1.6em;
+}
+
+#eth {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--lineClr);
+}
+
+#ethereum, #clock {
+    margin-bottom: -2.5px;
+}
+
+#eth-cyan {
+    float: left;
+}
+
+#eth-gray {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.cyan {
+    font-weight: 400;
+    color: var(--cyan);
+}
+
+.bio {
+    display: flex;
+    padding-top: 1rem;
+}
+
+#avatar {
+    max-width: 40px;
+    height: auto;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.jules {
+    margin-left: 1rem;
+    align-self: center;
+}
+
+.jules span {
+    color: var(--white);
+    transition: all 350ms;
+    cursor: pointer;
+}
+
+
+article h1:hover, .jules span:hover {
+    color: var(--cyan);
+}

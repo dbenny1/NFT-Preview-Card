@@ -1,0 +1,25 @@
+@media (max-width: 620px) {
+    body {
+        padding: 4em 2em;
+    }
+}
+
+@media (min-width: 621px) and (max-width: 1199px) {
+    body {
+        padding: 4em 0;
+    }
+
+    main {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding: 6em 0;
+    }
+
+    main {
+        max-width: 30%;
+    }
+}
